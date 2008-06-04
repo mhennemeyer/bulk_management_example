@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  month: MyString
+  billdays: 1
+  billabledays: 1
+  unit: 
+  total: 
+  year: 1
+  resourcename: MyString
+  projectname: MyString
+
+two:
+  month: MyString
+  billdays: 1
+  billabledays: 1
+  unit: 
+  total: 
+  year: 1
+  resourcename: MyString
+  projectname: MyString

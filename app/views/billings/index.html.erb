@@ -1,0 +1,17 @@
+<h1>Select Billings</h1>
+<% form_tag('/billing_bulk/new', :method => 'get') do %>
+
+  <% for billing in @billings %>
+    <%= check_box_tag 'billing_ids[]', billing.id %>
+    <%= h billing.resourcename %><br>
+  <% end %>
+  
+  
+    
+<%= submit_tag 'bulk-manage' %>
+
+<p>clicking on bulk-manage without<br> 
+selecting a billing yields in a new billing<br>
+</p>
+  
+<% end %>

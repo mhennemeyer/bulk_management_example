@@ -1,0 +1,15 @@
+<h1>Billing Bulk Management</h1>
+
+<% form_tag('/billing_bulk', :method => 'post') do %>
+
+  <div id="billings">
+    <%= render :partial => 'billing', :collection => @billings %>
+  </div>
+
+  <%= link_to_function "new billing" do |p|
+    p.insert_html :bottom, 'billings',  :partial => 'billing', :object => Billing.new
+  end %>
+  
+  <%= submit_tag 'bulk-update' %>
+  
+<% end %>
