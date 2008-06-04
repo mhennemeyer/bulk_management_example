@@ -1,5 +1,5 @@
 <% fields_for "billings[]", billing do |f| %>
-  <h2>Resourcename:</h2>
+  <%= f.text_field :resourcename, :index => nil %><br>
   <% unless billing.new_record? %>
     <%= f.hidden_field :id, :index => nil %>
   <% end  %>
